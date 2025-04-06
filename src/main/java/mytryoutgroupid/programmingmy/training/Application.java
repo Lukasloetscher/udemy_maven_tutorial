@@ -8,8 +8,9 @@ public class Application{
 
 
 	public int countWords(String words){
-		String[] seperateWords = StringUtils.split(words, ' ');
-		return (seperateWords == null) ? 0 : seperateWords.length;
+
+		String[] separateWords = StringUtils.split(words, ' ');
+		return (separateWords == null) ? 0 : separateWords.length;
 	}
 
 	public void greet() {
