@@ -45,4 +45,10 @@ public class ApplicationTest {
         int count = app.countWords("test");
         assertTrue(count == 1);
     }
+    
+    @Test
+    public void testWordCountfailure() {
+        int count = app.countWords("test achtung this test willalways fail. it is here for me to check out how the test runs (TODO add the @ignore falg soonish.");
+        assertTrue(count == 1);
+    }
 }
