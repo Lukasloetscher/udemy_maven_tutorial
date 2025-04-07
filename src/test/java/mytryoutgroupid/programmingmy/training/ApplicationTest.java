@@ -46,6 +46,7 @@ public class ApplicationTest {
         assertTrue(count == 1);
     }
     
+    @Ignore
     @Test
     public void testWordCountfailure() {
         int count = app.countWords("test achtung this test willalways fail. it is here for me to check out how the test runs (TODO add the @ignore falg soonish.");
